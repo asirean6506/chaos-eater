@@ -1,33 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-    <title>Chaos Eater - Death Metal Band</title>
+  <title>Chaos Eater</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="site-header">
-    <nav class="navbar">
-      <a href="#" class="logo"><img src="./assets/images/banner.png"></a>
 
-      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">CHAOS EATER</div>
 
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#discography">Discography</a></li>
+        <li><a href="#music">Music</a></li>
         <li><a href="#shows">Shows</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>CHAOS EATER</h1>
+      <p>Death Metal from Ohio</p>
+
+      <div class="hero-buttons">
+        <a href="#music" class="btn-primary">Listen Now</a>
+        <a href="#shows" class="btn-secondary">Upcoming Shows</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="music" id="music">
+    <div class="container">
+      <h2>Latest Release</h2>
+
+      <div class="album">
+        <img src="./assets/images/ds_cover.jpg" alt="Album cover" />
+
+        <div class="album-info">
+          <h3>Decayed Sanctum</h3>
+          <p>
+            A brutal release featuring crushing riffs, relentless drums,
+            and raw vocal energy.
+          </p>
+
+          <div class="music-links">
+            <a href="https://open.spotify.com/track/17Fp3vuC8QL3q44NnD8LT3?si=e956e17a8ee04528">Spotify</a>
+            <a href="https://music.apple.com/ng/song/decayed-sanctum/1883384852">Apple Music</a>
+            <a href="https://www.youtube.com/watch?v=ibFTjYXORzo">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="shows" id="shows">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Live</p>
+      <h2>Upcoming Shows</h2>
+      <p class="section-copy">
+        Catch Chaos Eater live. Tickets and event details update automatically.
+      </p>
+    </div>
+
+    
+  
+  <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+  <a class="bit-widget-initializer"
+    
+	data-artist-name="id_15637515"
+	
+	data-app-id="26d1a2ada941348154cd9414263506ea"
+	data-background-color="rgba(11,11,11,1)"
+	data-text-color="rgba(255,255,255,1)"
+	data-bit-logo-color="rgba(255,255,255,1)"
+	
+	data-separator-color="rgba(153,0,31,1)"
+    ></a>
+  </div>
+</section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About</h2>
+
+      <p>
+        Chaos Eater is a death doom band from Canton, Ohio 
+        by a coalition of members Nate Woodford, Matt Tripp, 
+        Bill Rose, Sam Hamilton, and Austin Sirean.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p>© 2026 Chaos Eater</p>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/chaos.eaterr">Instagram</a>
+        <a href="https://open.spotify.com/track/17Fp3vuC8QL3q44NnD8LT3?si=e956e17a8ee04528">Spotify</a>
+        <a href="https://www.youtube.com/watch?v=ibFTjYXORzo">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
