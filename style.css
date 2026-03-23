@@ -121,8 +121,7 @@ html {
   height: 3px;
   margin: 5px 0;
   background: #fff;
-  border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .hamburger.active span:nth-child(1) {
