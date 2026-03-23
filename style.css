@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAV */
 .site-header {
   position: sticky;
@@ -336,6 +340,8 @@ section {
   outline-offset: 3px;
 }
 
+/* SHOWS */
+
 .shows {
   padding: 90px 20px;
   background: linear-gradient(180deg, #0b0b0b, #111111);
@@ -377,6 +383,20 @@ section {
     padding: 14px;
     border-radius: 14px;
   }
+}
+
+/* IG */ 
+
+.instagram {
+  padding: 90px 20px;
+  background: linear-gradient(180deg, #0b0b0b, #111111);
+}
+
+.instagram-wrap {
+  margin-top: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 /* ABOUT */
