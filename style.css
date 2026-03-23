@@ -135,27 +135,9 @@ section {
   gap: 10px;
 }
 
-/* SHOWS */
-.show {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--border);
-  padding: 15px 0;
-}
-
-.date {
-  font-weight: bold;
-}
-
-.ticket {
-  color: var(--accent);
-}
-
 .shows {
   padding: 90px 20px;
-  background:
-    linear-gradient(180deg, #0b0b0b, #111111);
+  background: linear-gradient(180deg, #0b0b0b, #111111);
 }
 
 .section-header {
@@ -164,7 +146,7 @@ section {
 }
 
 .section-label {
-  color: #b8bfd6;
+  color: #9e9e9e;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 0.85rem;
@@ -172,17 +154,18 @@ section {
 }
 
 .section-copy {
-  color: #a7a7a7;
+  color: #bdbdbd;
   max-width: 620px;
 }
 
 .bandsintown-wrap {
+  margin-top: 28px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
 @media (max-width: 768px) {
