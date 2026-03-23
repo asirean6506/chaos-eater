@@ -22,7 +22,7 @@
       <div class="logo">CHAOS EATER</div>
 
       <ul class="nav-links">
-        <li><a href="#top">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#music">Music</a></li>
         <li><a href="#shows">Shows</a></li>
         <li><a href="#about">About</a></li>
@@ -32,39 +32,45 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero-overlay"></div>
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-noise"></div>
 
-    <div class="hero-content">
+  <div class="container hero-container">
+    <div class="hero-text">
+      <p class="hero-kicker">Death Metal • Ohio</p>
       <h1>CHAOS EATER</h1>
-      <p>Death Metal from Ohio</p>
+      <p class="hero-description">
+        Relentless riffs, crushing drums, and a discography built to leave a mark.
+      </p>
 
       <div class="hero-buttons">
-        <a href="#music" class="btn-primary">Listen Now</a>
-        <a href="#shows" class="btn-secondary">Upcoming Shows</a>
+        <a href="#music" class="btn btn-primary">Listen Now</a>
+        <a href="#shows" class="btn btn-secondary">Upcoming Shows</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- MUSIC -->
   <section class="music" id="music">
     <div class="container">
-      <h2>Latest Release</h2>
+      <h2 class="reveal">Latest Release</h2>
 
-      <div class="album">
+      <div class="album reveal delay-1">
         <img src="./assets/images/ds_cover.jpg" alt="Album cover" />
 
-        <div class="album-info">
+        <div class="album-info reveal delay-2">
           <h3>Decayed Sanctum</h3>
-          <p>
+          <p class="reveal-delay-1">
             A brutal release featuring crushing riffs, relentless drums,
             and raw vocal energy.
           </p>
 
           <div class="music-links">
-            <a href="https://open.spotify.com/track/17Fp3vuC8QL3q44NnD8LT3?si=e956e17a8ee04528">Spotify</a>
-            <a href="https://music.apple.com/ng/song/decayed-sanctum/1883384852">Apple Music</a>
-            <a href="https://www.youtube.com/watch?v=ibFTjYXORzo">YouTube</a>
+            <a class="reveal-delay-2" href="https://open.spotify.com/track/17Fp3vuC8QL3q44NnD8LT3?si=e956e17a8ee04528">Spotify</a>
+            <a class="reveal-delay-3" href="https://music.apple.com/ng/song/decayed-sanctum/1883384852">Apple Music</a>
+            <a class="reveal-delay-4" href="https://www.youtube.com/watch?v=ibFTjYXORzo">YouTube</a>
           </div>
         </div>
       </div>
@@ -146,5 +152,22 @@
     </div>
   </footer>
 
+<!-- SCRIPTS -->
+<script>
+  const revealItems = document.querySelectorAll(".reveal");
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+</script>
+  
 </body>
 </html>
